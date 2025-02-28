@@ -18,7 +18,7 @@
                <ul role="list">
                   @foreach ($basket_responce as $item)
                   <li class="shadow p-4 grid gap-4 md:grid-cols-[auto_1fr_auto] items-center">
-                     <div>
+                     <div class="shadow-md mr-4 border p-4">
                         <img src="https://via.placeholder.com/40" class="h-36 w-full md:h-40 md:w-40 object-cover rounded-md" alt="Название товара">
                      </div>
                      <div class="flex flex-col gap-4">
