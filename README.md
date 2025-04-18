@@ -17,66 +17,93 @@
 
 [English](README.md) | [Русский](README.ru.md) | [Український](README.ua.md)
 
-<strong>Store</strong> —  is an online store project built using the technology stack: **HTML**, **CSS**, **JavaScript (React)**, **PHP (Laravel)**, and **SQL**. The store includes pages for guests, users, and administrators, along with functionality for adding, editing, and displaying products, managing orders, and handling user registration and authentication.
+<strong>Store</strong> — is an online store project built using the technology stack: **HTML**, **CSS**, **JavaScript (React)**, **PHP (Laravel)**, and **SQL**. The store includes pages for guests, users, and administrators, along with functionality for adding, editing, and displaying products, managing orders, and handling user registration and authentication.
 
 <br/>
 
 ## Project Structure
 
 ### 1. Main Page
+
 The homepage featuring product categories and links to popular items.
 
 ### 2. Admin Panel
+
 An admin panel for managing products and orders:
-- **Add Products**: A page to add new products (name, description, price, quantity, categories, photo).
-- **Edit Products**: A page to edit existing products.
-- **View Orders**: A page to view all user orders.
+
+-   **Add Products**: A page to add new products (name, description, price, quantity, categories, photo).
+-   **Edit Products**: A page to edit existing products.
+-   **View Orders**: A page to view all user orders.
 
 ### 3. User Dashboard
-- A page for viewing and editing user profiles.
-- Order history and current order details.
+
+-   A page for viewing and editing user profiles.
+-   Order history and current order details.
 
 ### 4. Registration and Authentication
-- **Registration**: A form to create a new account with data validation.
-- **Authentication**: A login form to access the system with login and password verification.
+
+-   **Registration**: A form to create a new account with data validation.
+-   **Authentication**: A login form to access the system with login and password verification.
 
 ### 5. Order Form (Cart)
-- The ability to add items to a cart and place an order.
+
+-   The ability to add items to a cart and place an order.
 
 ### 6. Product Page
-- Displays detailed product information: name, description, price, categories, and photos.
+
+-   Displays detailed product information: name, description, price, categories, and photos.
 
 <br/>
 
 ## Technology Stack
 
-- **Frontend**:
-  - **HTML**, **CSS**, **JavaScript** (React)
-  - **Bootstrap / Tailwind**
-  - **Vite** (for development and bundling)
+-   **Frontend**:
 
-- **Backend**:
-  - **PHP (Laravel)**
+    -   **HTML**, **CSS**, **JavaScript** (React)
+    -   **Bootstrap / Tailwind**
+    -   **Vite** (for development and bundling)
 
-- **Database**:
-  - **MySQL (SQL)**
+-   **Backend**:
+
+    -   **PHP (Laravel)**
+
+-   **Database**:
+    -   **MySQL (SQL)**
 
 <br/>
 
-## Installation and Launch
+## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone <repository_url>
 
-2. Run migrations and seeders:
-   ```bash
-   php artisan migrate --seed
+    ```bash
+    git clone https://github.com/WolfAmadeusen/Store.git
+    ```
 
-3. Start the Vite bundler:
-   ```bash
-   npm run dev
+2. Installing dependencies:
 
-4. Start the Laravel server:
-   ```bash
-   php artisan serve
+    ```bash
+      composer install
+    ```
+
+    ```bash
+      npm install
+    ```
+
+3. Running migrations and seeders:
+
+    ```bash
+      php artisan migrate --seed
+    ```
+
+4. Building with Vite:
+
+    ```bash
+      npm run dev
+    ```
+
+5. Starting Laravel:
+
+    ```bash
+      php artisan serve
+    ```
